@@ -1,0 +1,134 @@
+*, html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(back_nat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.appliMeteo{
+    width: 300px;
+    height: 457px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    background: linear-gradient(30deg, blue, white);
+    padding-top: 15px;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.date, .heure{
+    width: 100%;
+    text-align: center;
+}
+
+.image{
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 10px;
+    /* background-color: white; */
+    border-radius: 20px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.temperature{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* margin-top: 10px; */
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+.description{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.descriptions{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.previsions{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+.previsions>div{
+    /* border: 1px solid black; */
+    width: 70px;
+    height: 80px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    scroll-snap-align: start;
+    overflow-x: auto;
+}
+
+.previsions div p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    /* border: 1px solid white; */
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jour .desc{
+    text-align: center;
+    color: white;
+}
+
+.cache{
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(37deg, blue, rgb(78, 78, 255));
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
+    top: 440px;
+}
