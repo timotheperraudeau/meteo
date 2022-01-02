@@ -44,7 +44,7 @@ function geoFindMe() {
             console.log(err);
         });
 
-    await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=47f02697dc0dd7c3eab316e0b1754c87`)
+    await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=47f02697dc0dd7c3eab316e0b1754c87`)
       .then(function(res){
         if(res.ok){
           return res.json();
