@@ -33,7 +33,7 @@ function geoFindMe() {
         .then(function(value1) {
             console.log(value1);
             let icon = value1.current.weather[0].icon
-            image.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
+            image.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png">`;
             temps.innerText = value1.current.weather[0].description;
             temperature.innerText = Math.round(value1.current.temp - 273.15) + "°" ;
             humidite.innerText = "Humidité :" + value1.current.humidity + "%";
@@ -57,11 +57,11 @@ function geoFindMe() {
         let icon4 = value2.list[32].weather[0].icon;
         let icon5 = value2.list[39].weather[0].icon;
 
-        img1.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon1}@2x.png">`;
-        img2.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon2}@2x.png">`;
-        img3.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon3}@2x.png">`;
-        img4.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon4}@2x.png">`;
-        img5.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon5}@2x.png">`;
+        img1.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon1}@2x.png">`;
+        img2.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon2}@2x.png">`;
+        img3.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon3}@2x.png">`;
+        img4.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon4}@2x.png">`;
+        img5.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon5}@2x.png">`;
         desc1.innerText = Math.round(value2.list[8].main.temp - 273.15) + "°";
         desc2.innerText = Math.round(value2.list[16].main.temp - 273.15) + "°";
         desc3.innerText = Math.round(value2.list[24].main.temp - 273.15) + "°";
