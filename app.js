@@ -1,4 +1,5 @@
 const date = document.querySelector(".date");
+const prevision = document.querySelector(".previsions");
 
 
 function geoFindMe() {
@@ -135,4 +136,10 @@ jour4.innerText = jourSemaine(4);
 jour5.innerText = jourSemaine(5);
 
 };
+
+prevision.addEventListener('wheel', (evt) =>{
+  evt.preventDefault();
+  prevision.scrollLeft += evt.deltaY;
+});
+
 setInterval(heureChange, 1000);

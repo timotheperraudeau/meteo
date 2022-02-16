@@ -87,6 +87,7 @@ h2{
     margin: auto;
     margin-top: 10px;
     padding-bottom: 30px;
+    overflow-x: auto;
 }
 
 .previsions>div{
@@ -97,7 +98,7 @@ h2{
     flex-shrink: 0;
     flex-basis: auto;
     scroll-snap-align: start;
-    overflow-x: auto;
+    
 }
 
 .previsions div p{
